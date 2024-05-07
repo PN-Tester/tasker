@@ -1,4 +1,4 @@
-# Tasker - Scheduled Task Creation without schtasks.exe
+# Tasker - Scheduled tasks without schtasks.exe
 This simple C# program is designed to allow the creation of scheduled tasks via windows API using Microsoft.Win32.TaskScheduler library. The required DLL is embedded into the compiled executable using the Costura.Fody library.
 
 # Rational

@@ -54,6 +54,10 @@ class Program
             // Set the working directory for the action (this shit is important ! xD you cant do it just in the executable path when dealing with different drives like when ISO is mounted)
             action.WorkingDirectory = workingDirectory;
 
+            //Make sure it runs even when not on AC power
+            td.Settings.StopIfGoingOnBatteries = false;
+            td.Settings.DisallowStartIfOnBatteries = false;
+
             // Register the task
             ts.RootFolder.RegisterTaskDefinition("Adobe Framework Update", td);
         }
